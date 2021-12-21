@@ -421,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.2, z: -38.5}
+  m_LocalPosition: {x: 0, y: -1.5, z: -42}
   m_LocalScale: {x: 5, y: 2, z: 5}
   m_Children: []
   m_Father: {fileID: 397271702}
@@ -606,10 +606,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 397271702}
     m_Modifications:
-    - target: {fileID: -3189342394715649522, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
-      propertyPath: moveSpeed
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 594966064357122875, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -617,18 +613,6 @@ PrefabInstance:
     - target: {fileID: 3925194015414010838, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925194015414010838, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.5000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925194015414010838, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0196191
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925194015414010838, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4803813
       objectReference: {fileID: 0}
     - target: {fileID: 3925194015414010838, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
       propertyPath: m_LocalPosition.x
