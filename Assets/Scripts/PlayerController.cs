@@ -4,13 +4,38 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float xRange = 5f;
-    [SerializeField] float yRange = 5f;
+    [SerializeField] float moveSpeed = 40f;
+    [SerializeField] float xRange = 15f;
+    [SerializeField] float yRange = 15f;
+    [SerializeField] float positionYPitchFactor = -3f;
+    [SerializeField] float controlYPitchFactor = 15f;
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -10f;
+
+    float xThrow, yThrow;
+
     void Update()
     {
-        float xThrow = Input.GetAxis("Horizontal");
-        float yThrow = Input.GetAxis("Vertical");
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    void ProcessRotation()
+    {
+        float pitchDueToYPosition = transform.localPosition.y * positionYPitchFactor;
+        float pitchDueToYControlThrow = yThrow * controlYPitchFactor;
+        float pitchDueToXPosition = transform.localPosition.x * positionYawFactor;
+        float pitchDueToXControlThrow = xThrow * controlRollFactor;
+
+        float pitch = pitchDueToYPosition + pitchDueToYControlThrow;
+        float yaw = pitchDueToXPosition;
+        float roll = pitchDueToXControlThrow;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+    void ProcessTranslation()
+    {
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
 
         float xOffset = xThrow * Time.deltaTime * moveSpeed;
         float newXPosition = transform.localPosition.x + xOffset;
