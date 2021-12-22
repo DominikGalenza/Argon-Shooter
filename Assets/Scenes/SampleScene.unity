@@ -156,7 +156,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 741e5beab96358b42bd7793a7dc71a1c, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &436354215
 Terrain:
   m_ObjectHideFlags: 0
@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 1207520550}
   - component: {fileID: 1207520549}
   - component: {fileID: 1207520548}
+  - component: {fileID: 1207520553}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -412,16 +413,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1574038422 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6833035755670095834, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
-  m_PrefabInstance: {fileID: 8999474898566220554}
+--- !u!114 &1207520553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1880015194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4287323818177216442, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
-  m_PrefabInstance: {fileID: 8999474898566220554}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207520547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900bf5b85171e04b8c4f96551ea00fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1997831996
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,18 +484,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4725660918897238506, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4725660918897238506, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 1880015194}
-    - target: {fileID: 4725660918897238506, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 1574038422}
     - target: {fileID: 8999474898761443740, guid: 0cfa71b19f07fa045b479f3674178725, type: 3}
       propertyPath: m_RootOrder
       value: 4
