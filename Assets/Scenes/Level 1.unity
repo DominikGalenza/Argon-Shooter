@@ -409,8 +409,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionVFX: {fileID: 3955561855813964131, guid: 541d33b657c95dd4ab6f17125d5fc32e, type: 3}
+  hitVFX: {fileID: 3955561855813964131, guid: 3eb7744184efe3e42b28f8be68532690, type: 3}
   parent: {fileID: 1174164903}
   scorePerHit: 50
+  hitPoints: 100
+  damagePerHit: 25
 --- !u!1 &1997831996
 GameObject:
   m_ObjectHideFlags: 0
