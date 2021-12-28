@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.29
       objectReference: {fileID: 0}
+    - target: {fileID: 8753906248309848015, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
 --- !u!1 &1902902885953997023 stripped
@@ -240,16 +244,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5546771991886031934, guid: 1c519c7ffa75c45468894fed1726f8e0, type: 3}
   m_PrefabInstance: {fileID: 1308795334024080356}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5110970263162725937
-MonoBehaviour:
+--- !u!65 &1050932563
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902902885953997023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591e33e9a9f949849bc4fecb21f3bddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadLevelDelay: 1
+  serializedVersion: 2
+  m_Size: {x: 12.200177, y: 8.8252, z: 12.1063}
+  m_Center: {x: 0.024501223, y: 0, z: 0.9823589}
